@@ -1,1 +1,3 @@
 # starmerge
+
+githubのpullRequestデータを集計して、ダッシュボードを作成するプロジェクトです。
