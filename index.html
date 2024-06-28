@@ -4,11 +4,132 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Starmarge</title>
+  <title>StarMergeプロジェクト</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      font-size: 14px;
+    }
+
+    th,
+    td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #f2f2f2;
+      font-weight: bold;
+    }
+
+    caption {
+      font-weight: bold;
+      margin-bottom: 10px;
+      font-size: 1.2em;
+    }
+
+    .summary {
+      background-color: #e6f3ff;
+      font-weight: bold;
+    }
+
+    .no-data {
+      background-color: #f9f9f9;
+      color: #999;
+    }
+  </style>
 </head>
 
 <body>
-  <h1>Starmargeプロジェクト</h1>
+  <header>
+    <h1>StarMergeプロジェクト</h1>
+    <p>GitHubプルリクエストデータダッシュボード</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>YujiTaniのプルリクエスト統計</h2>
+      <table>
+        <caption>月別プルリクエストデータ一覧</caption>
+        <thead>
+          <tr>
+            <th>基準月</th>
+            <th>PRマージ数</th>
+            <th>レビュー数</th>
+            <th>平均変更行数(1PRあたり)</th>
+            <th>100変更あたりのレビュー数</th>
+            <th>開発開始からオープンの平均</th>
+            <th>リードタイム（オープンからリリースの平均）</th>
+            <th>1日あたり変更行数(20日固定)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="no-data">
+            <td>2021-07</td>
+            <td colspan="7">データなし</td>
+          </tr>
+          <tr class="no-data">
+            <td>2021-08</td>
+            <td colspan="7">データなし</td>
+          </tr>
+          <tr class="no-data">
+            <td>2021-09</td>
+            <td colspan="7">データなし</td>
+          </tr>
+          <tr>
+            <td>2021-10</td>
+            <td>1</td>
+            <td>5.0</td>
+            <td>125.0</td>
+            <td>4.0</td>
+            <td>2.9</td>
+            <td>29.5</td>
+            <td>6.3</td>
+          </tr>
+          <!-- 以下、データ行を追加 -->
+          <!-- ... -->
+          <tr>
+            <td>2024-06</td>
+            <td>11</td>
+            <td>15.3</td>
+            <td>549.2</td>
+            <td>2.8</td>
+            <td>1</td>
+            <td>10.1</td>
+            <td>302.1</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr class="summary">
+            <td>総計</td>
+            <td>285</td>
+            <td>10.1</td>
+            <td>257.7</td>
+            <td>3.9</td>
+            <td>5</td>
+            <td>21.6</td>
+            <td>3672.0</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 StarMergeプロジェクト. All rights reserved.</p>
+  </footer>
 </body>
 
 </html>
