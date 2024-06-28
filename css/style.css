@@ -1,0 +1,91 @@
+/* グローバルなCSSを定義 */
+:root {
+  --background: #e0e5ec;
+  --text-color: #333;
+  --highlight: #6d5dfc;
+  --shadow-light: #ffffff;
+  --shadow-dark: #a3b1c6;
+  --base-spacing-number: 4px;
+}
+
+body {
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--background);
+  max-width: 1200px;
+}
+
+/* neumorphic */
+
+.neumorphic {
+  border-radius: 20px;
+  background: var(--background);
+  box-shadow: 6px 6px 16px var(--shadow-dark),
+    -6px -6px 16px var(--shadow-light);
+  padding: 20px;
+}
+
+.unneumorphic {
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  background: var(--background);
+  box-shadow: inset 3px 3px 5px var(--shadow-dark),
+    inset -3px -3px 5px var(--shadow-light);
+  border: none
+}
+
+.neumorphic-button {
+  margin-left: 12px;
+  padding: 20px;
+  border-radius: 20px;
+  background: var(--background);
+  box-shadow: 8px 8px 16px var(--shadow-dark),
+    -8px -8px 16px var(--shadow-light);
+  border: none;
+  display: inline-block;
+  height: 80%;
+  transition: 0.3s;
+
+  &:active {
+    box-shadow: inset 3px 3px 5px var(--shadow-dark),
+      inset -3px -3px 5px var(--shadow-light);
+    transition: 0.3s;
+  }
+}
+
+/* header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.title {
+  text-decoration: none;
+}
+
+.sub-title {
+  text-align: center;
+}
+
+.request-menu {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  align-items: center;
+}
+
+/* main */
+.main {
+  margin-bottom: 24px;
+}
